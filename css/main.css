@@ -184,17 +184,28 @@ main {
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
-.projects {
+.tabs {
+  background: #3a3a3a; }
+  .tabs .current {
+    color: #eece1a; }
+
+.web-projects,
+.music-projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr); }
-  .projects img {
+  .web-projects img,
+  .music-projects img {
     width: 100%;
-    border: 5px #5e5e5e solid; }
-    .projects img:hover {
+    border: 5px #5b5b5b solid; }
+    .web-projects img:hover,
+    .music-projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.music-projects {
+  display: none; }
 
 .boxes {
   display: flex;
@@ -278,5 +289,8 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 4.5rem; }
-  .projects {
-    grid-template-columns: 1fr; } }
+  .web-projects,
+  .music-projects {
+    grid-template-columns: 1fr; }
+  .tabs {
+    font-size: 14.7px; } }
