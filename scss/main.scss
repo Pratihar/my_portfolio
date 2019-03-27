@@ -115,15 +115,24 @@ main {
   }
 }
 
+.tabs {
+  background: darken($primary-color, 4);
+
+  .current {
+    color: $secondary-color;
+  }
+}
+
 // Work/Projects
-.projects {
+.web-projects,
+.music-projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr);
 
   img {
     width: 100%;
-    border: 5px lighten($primary-color, 10) solid;
+    border: 5px lighten($primary-color, 9) solid;
 
     &:hover {
       opacity: 0.5;
@@ -131,6 +140,10 @@ main {
       @include easeOut;
     }
   }
+}
+
+.music-projects {
+  display: none;
 }
 
 // Contact Page
