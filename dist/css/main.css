@@ -107,7 +107,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -156,7 +156,17 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 10vh; }
+  main .advert {
+    background: linear-gradient(#000, #000) no-repeat center/3px 95%;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr); }
+    main .advert .web-ad {
+      padding: 10px; }
+    main .advert .music-ad {
+      padding: 10px; }
 
 .about-info {
   display: grid;
@@ -293,4 +303,6 @@ main {
   .music-projects {
     grid-template-columns: 1fr; }
   .tabs {
-    font-size: 14.7px; } }
+    font-size: 14.7px; }
+  .advert {
+    font-size: 11px; } }
